@@ -21,79 +21,21 @@ The IDs should match or else the tests will fail.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            margin-top: 50px;
-        }
-
-        .button {
-            color: white;
-            background-color: rgb(43, 7, 69);
-            border: none;
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .button:hover {
-            background-color: rgb(60, 10, 90);
-        }
-
-        input {
-            padding: 10px;
-            font-size: 16px;
-            width: 200px;
-        }
-
-        h2 {
-            margin-bottom: 20px;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <h2>Simple Calculator</h2>
     <input type="number" id="num1" placeholder="Enter first number">
     <br><br>
-    <input type="number" id="num2" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
     <br><br>
-    <button id="Add" class="button" onclick="calculate('add')">Add</button>
-    <button id="Subtract" class="button" onclick="calculate('subtract')">Subtract</button>
-    <button id="Multiply" class="button" onclick="calculate('multiply')">Multiply</button>
-    <button id="Divide" class="button" onclick="calculate('divide')">Divide</button>
+    <button id="Add" onclick="calculate('add')">Add</button>
+    <button id="Subtract" onclick="calculate('subtract')">Subtract</button>
+    <button id="Multiply" onclick="calculate('multiply')">Multiply</button>
+    <button id="Divide" onclick="calculate('divide')">Divide</button>
 
-    <script>
-        function calculate(operation) {
-            const num1 = parseFloat(document.getElementById("num1").value);
-            const num2 = parseFloat(document.getElementById("num2").value);
-            let result;
-            if (isNaN(num1) || isNaN(num2)) {
-                alert("Please enter valid numbers");
-                return;
-            }
-            switch (operation) {
-                case "add":
-                    result = num1 + num2;
-                    break;
-                case "subtract":
-                    result = num1 - num2;
-                    break;
-                case "multiply":
-                    result = num1 * num2;
-                    break;
-                case "divide":
-                    result = num1 / num2;
-                    break;
-            }
-            alert("Result= " + result);
-        }
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
