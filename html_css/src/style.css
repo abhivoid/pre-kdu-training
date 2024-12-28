@@ -1,0 +1,259 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #edf2f7, #cfd9df);
+    color: #2c3e50;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+h1.heading {
+    color: #1abc9c;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h4.heading {
+    color: #34495e;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+hr {
+    border: 0.5px solid #bdc3c7;
+    margin: 20px auto;
+    width: 60%;
+    opacity: 0.7;
+}
+
+/* About Me Section */
+#about-me {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    max-width: 800px;
+}
+
+#about-me img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border: 5px solid #1abc9c;
+}
+
+/* Qualification Table */
+.table {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+table.qualification {
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table.qualification th, table.qualification td {
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #ecf0f1;
+}
+
+table.qualification th {
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table.qualification tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table.qualification tr:hover {
+    background-color: #e8f6f3;
+}
+
+/* Projects Section */
+#projects {
+    padding: 30px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    max-width: 800px;
+}
+
+.project {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.project img {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    color: #1abc9c;
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+/* Skills Section */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 20px 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 15px 25px;
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #16a085;
+    transform: translateY(-5px);
+}
+
+/* Links Section */
+a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #16a085;
+    text-decoration: underline;
+}
+
+section h2 {
+    color: #34495e;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* General button styling */
+.connect-buttons a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white; /* Default color for links */
+    font-size: 16px;
+}
+
+/* LinkedIn button theme */
+.connect-buttons a.linkedin {
+    background-color: #0077B5;
+    border: 2px solid #005582;
+}
+
+.connect-buttons a.linkedin:hover {
+    background-color: #005582;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 119, 181, 0.2);
+}
+
+/* GitHub button theme */
+.connect-buttons a.github {
+    background-color: #333;
+    border: 2px solid #1a1a1a;
+}
+
+.connect-buttons a.github:hover {
+    background-color: #1a1a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(51, 51, 51, 0.2);
+}
+
+/* Center align Connect section */
+section#connect {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    margin: 30px auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    max-width: 800px;
+}
+
+section#connect h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 5px 0;
+    font-size: 14px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    table.qualification th, table.qualification td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    ul li {
+        display: block;
+        margin: 15px auto;
+    }
+
+    .project img {
+        width: 100%;
+    }
+
+    #about-me, #projects {
+        margin: 20px 15px;
+    }
+}
